@@ -1,0 +1,36 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+	#import "DDataModel.h"
+
+	#import "common/common.h"
+	#import "common/Utility.h"
+
+    #import "Protocol/BaseProtocol.h"
+    #import "Protocol/DProtocol_User.h"
+
+	#import <SystemConfiguration/SystemConfiguration.h>
+	#import <MobileCoreServices/MobileCoreServices.h>
+
+//环信
+
+    #import "WCAlertView.h"
+
+#endif
+
+#define UMENG_APPKEY @"52b1478256240b55760eabe8"
+#define BAIDUMAP_APPKEY @"4fbM00t52z6mT9xMWugynA6K"
+#define APPID @"53193adacc997e546bca5905"
+#define APPKEY @"6c3873357032387163303861"
